@@ -1,5 +1,6 @@
 package com.opencart.testcases;
 
+import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -15,13 +16,14 @@ public class IndexPageTest	extends BaseClass {
 	{
 	
 		super();
-		index = new IndexPage();
+		
 	}
 	@BeforeMethod
 	public void setUp()
 	{
 		initalization();
 		index=new IndexPage();
+		log=Logger.getLogger("IndexPageTest");
 	}
 	
 	
@@ -30,13 +32,15 @@ public class IndexPageTest	extends BaseClass {
 			
 		
 				Assert.assertTrue(index.indexPageTitleDisplayed());
+				log.info("test case-2");
 			}
 			
 			@Test(priority=2)
 			public void titleTest()
 			{
 				Assert.assertEquals("Your Store", index.indexPageTitleName());
-				//System.out.println(index.indexPageTitleName());
+				
+			log.info("test case -3");
 			}
 			
 			@Test(priority=3)
@@ -44,12 +48,15 @@ public class IndexPageTest	extends BaseClass {
 			{
 				
 				Assert.assertEquals(index.currencyDropDownisDisplayed(), true);
+				
+				log.info("test case -4");
 			}
 			
 			@Test(priority=4)
 			public void doller()
 			{
-				System.out.println(index.currncyDoller());
+				
+				log.info("test case -5");
 			}
 			@Test(priority=5)
 			
@@ -57,12 +64,14 @@ public class IndexPageTest	extends BaseClass {
 			{
 				
 				Assert.assertTrue(index.currencyDropDownisDisplayed());
+				log.info("test case -6");
 			}
 			
 			@Test(priority=6)
 			public void loginPageNavigation()
 			{
-				System.out.println( index.getLoginPage());
+				
+				log.info("test case -7");
 			}
 			
 		@AfterMethod

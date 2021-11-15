@@ -3,16 +3,21 @@ package com.opencart.base;
 import java.io.FileInputStream;
 import java.util.Properties;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.apache.log4j.PropertyConfigurator;
+
 
 public class BaseClass {
 	
 	public static WebDriver driver;
 	public static Properties property;
+	public static Logger log;
 	
 	public BaseClass()
 	{
+		PropertyConfigurator.configure("Log4j.properties");
 		try
 		{
 			property = new Properties();

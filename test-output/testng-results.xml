@@ -1,25 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11510" started-at="2021-11-14T15:41:17 IST" finished-at="2021-11-14T15:41:29 IST">
+  <suite name="Default suite" duration-ms="34686" started-at="2021-11-15T13:42:20 IST" finished-at="2021-11-15T13:42:54 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="11510" started-at="2021-11-14T15:41:17 IST" finished-at="2021-11-14T15:41:29 IST">
-      <class name="com.opencart.testcases.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.opencart.testcases.LoginPageTest@7113b13f]" name="setUp" is-config="true" duration-ms="6165" started-at="2021-11-14T15:41:17 IST" finished-at="2021-11-14T15:41:23 IST">
+    <test name="Default test" duration-ms="34686" started-at="2021-11-15T13:42:20 IST" finished-at="2021-11-15T13:42:54 IST">
+      <class name="com.opencart.testcases.ForgotPasswordTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.opencart.testcases.ForgotPasswordTest@df27fae]" name="setup" is-config="true" duration-ms="9470" started-at="2021-11-15T13:42:20 IST" finished-at="2021-11-15T13:42:29 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginTest()[pri:1, instance:com.opencart.testcases.LoginPageTest@7113b13f]" name="loginTest" duration-ms="4183" started-at="2021-11-14T15:41:23 IST" finished-at="2021-11-14T15:41:28 IST">
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateTitle()[pri:1, instance:com.opencart.testcases.ForgotPasswordTest@df27fae]" name="validateTitle" duration-ms="24" started-at="2021-11-15T13:42:29 IST" finished-at="2021-11-15T13:42:29 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.opencart.testcases.LoginPageTest@7113b13f]" name="teardown" is-config="true" duration-ms="1121" started-at="2021-11-14T15:41:28 IST" finished-at="2021-11-14T15:41:29 IST">
+        </test-method> <!-- validateTitle -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.opencart.testcases.ForgotPasswordTest@df27fae]" name="teardown" is-config="true" duration-ms="1462" started-at="2021-11-15T13:42:29 IST" finished-at="2021-11-15T13:42:31 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.opencart.testcases.LoginPageTest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.opencart.testcases.ForgotPasswordTest@df27fae]" name="setup" is-config="true" duration-ms="5721" started-at="2021-11-15T13:42:31 IST" finished-at="2021-11-15T13:42:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateInputBox()[pri:2, instance:com.opencart.testcases.ForgotPasswordTest@df27fae]" name="validateInputBox" duration-ms="66" started-at="2021-11-15T13:42:36 IST" finished-at="2021-11-15T13:42:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateInputBox -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.opencart.testcases.ForgotPasswordTest@df27fae]" name="teardown" is-config="true" duration-ms="1224" started-at="2021-11-15T13:42:36 IST" finished-at="2021-11-15T13:42:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.opencart.testcases.ForgotPasswordTest@df27fae]" name="setup" is-config="true" duration-ms="7256" started-at="2021-11-15T13:42:38 IST" finished-at="2021-11-15T13:42:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateSubmitButton()[pri:3, instance:com.opencart.testcases.ForgotPasswordTest@df27fae]" name="validateSubmitButton" duration-ms="48" started-at="2021-11-15T13:42:45 IST" finished-at="2021-11-15T13:42:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateSubmitButton -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.opencart.testcases.ForgotPasswordTest@df27fae]" name="teardown" is-config="true" duration-ms="1364" started-at="2021-11-15T13:42:45 IST" finished-at="2021-11-15T13:42:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.opencart.testcases.ForgotPasswordTest@df27fae]" name="setup" is-config="true" duration-ms="5803" started-at="2021-11-15T13:42:46 IST" finished-at="2021-11-15T13:42:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateBackButtonOpration()[pri:4, instance:com.opencart.testcases.ForgotPasswordTest@df27fae]" name="validateBackButtonOpration" duration-ms="812" started-at="2021-11-15T13:42:52 IST" finished-at="2021-11-15T13:42:53 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateBackButtonOpration -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.opencart.testcases.ForgotPasswordTest@df27fae]" name="teardown" is-config="true" duration-ms="1369" started-at="2021-11-15T13:42:53 IST" finished-at="2021-11-15T13:42:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.opencart.testcases.ForgotPasswordTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

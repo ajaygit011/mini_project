@@ -21,6 +21,8 @@ public class LoginPage extends BaseClass {
 	@FindBy(xpath="//img[@title='Your Store']")
 	WebElement logo;
 	
+	@FindBy(xpath="//a[text()='Forgotten Password']//preceding-sibling::input")
+	WebElement forgotPassword;
 	public LoginPage()
 	{
 		PageFactory.initElements(driver,this);
@@ -37,6 +39,15 @@ public class LoginPage extends BaseClass {
 		return new HomePage();
 		
 	}
+	
+	
+	public ForgotPassword forgotPasswordLink()
+	{
+		forgotPassword.click();
+		return new ForgotPassword();
+	}
+	
+	
 		
 	
 	

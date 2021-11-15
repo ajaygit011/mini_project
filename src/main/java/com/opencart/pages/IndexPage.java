@@ -8,10 +8,11 @@ import com.opencart.base.*;
 public class IndexPage extends BaseClass {
 	
 	@FindBy(xpath="//img[@title='Your Store']")
+	
 	WebElement titleimg;
 	
 	@FindBy(xpath="//button[@class='btn btn-link dropdown-toggle']")
-	WebElement selectButton;
+	WebElement currencyElement;
 	
 	@FindBy(xpath="//a[@title='My Account']")
 	WebElement dropdownLInk;
@@ -41,15 +42,15 @@ public class IndexPage extends BaseClass {
 	
 	public boolean currencyDropDownisDisplayed()
 	{
-		selectButton.click();
+		currencyElement.click();
 		driver.findElement(By.xpath("//button[@name='EUR']")).getText();
 		
-		return selectButton.isDisplayed();
+		return currencyElement.isDisplayed();
 	}
 	
 	public String currncyDoller()
 	{
-		 selectButton.click();
+		currencyElement.click();
 		 return driver.findElement(By.xpath("//button[@name='EUR']")).getText();
 	}
 	
